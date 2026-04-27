@@ -69,9 +69,9 @@ def rita_blomma(t, kronblad, sida, farg):
 # === HUVUDPROGRAM ===
 
 def huvudprogram():
-    """
-    Huvudprogrammet som styr menyn och programflödet.
-    """
+    t = turtle.Turtle()
+    t.speed(5)
+
     # TODO: Skapa en turtle
     # t = turtle.Turtle()
     
@@ -79,6 +79,13 @@ def huvudprogram():
     # Standard: 5 (medel), 0 (snabbast), 10 (snabb)
     
     while True:
+        print("\n--- TURTLE MÖNSTER ---")
+        print("1. Rita kvadrat")
+        print("2. Rita triangel")
+        print("3. Rita cirkel")
+        print("4. Rita blomma")
+        print("5. Avsluta")
+
         # TODO: Visa meny
         # print("\n--- TURTLE MÖNSTER ---")
         # print("1. Rita kvadrat")
