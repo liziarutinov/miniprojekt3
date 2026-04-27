@@ -45,7 +45,7 @@ def rita_triangel(t, sida, farg):
 def rita_cirkel(t, radie, farg):
     t.pencolor(farg)
     t.circle(radie)
-    
+
     # TODO: Implementera funktionen
     # 1. Sätt pennans färg med t.pencolor(farg)
     # 2. Använd t.circle(radie) för att rita cirkeln
@@ -53,15 +53,11 @@ def rita_cirkel(t, radie, farg):
 
 
 def rita_blomma(t, kronblad, sida, farg):
-    """
-    Ritar en blomma genom att upprepa en kvadrat i en cirkel.
+    vinkel = 360 / kronblad
+    for i in range(kronblad):
+        rita_kvadrat(t, sida, farg)
+        t.left(vinkel)
     
-    Parametrar:
-        t: Turtle-objektet
-        kronblad (int): Antal kronblad (kvadrater)
-        sida (int): Sidlängd på varje kvadrat
-        farg (str): Färg på linjen
-    """
     # TODO: Implementera funktionen
     # 1. Beräkna vinkeln mellan varje kronblad: 360 / kronblad
     # 2. Upprepa kronblad gånger:
