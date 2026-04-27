@@ -15,14 +15,11 @@ import turtle
 # === FIGURER ===
 
 def rita_kvadrat(t, sida, farg):
-    """
-    Ritar en kvadrat.
-    
-    Parametrar:
-        t: Turtle-objektet
-        sida (int): Längden på sidan
-        farg (str): Färg på linjen
-    """
+    t.pencolor(farg)
+    for i in range(4):
+        t.forward(sida)
+        t.left(90)
+        
     # TODO: Implementera funktionen
     # 1. Sätt pennans färg med t.pencolor(farg)
     # 2. Upprepa 4 gånger:
