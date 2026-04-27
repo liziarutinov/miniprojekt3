@@ -19,7 +19,7 @@ def rita_kvadrat(t, sida, farg):
     for i in range(4):
         t.forward(sida)
         t.left(90)
-        
+
     # TODO: Implementera funktionen
     # 1. Sätt pennans färg med t.pencolor(farg)
     # 2. Upprepa 4 gånger:
@@ -29,14 +29,11 @@ def rita_kvadrat(t, sida, farg):
 
 
 def rita_triangel(t, sida, farg):
-    """
-    Ritar en liksidig triangel.
-    
-    Parametrar:
-        t: Turtle-objektet
-        sida (int): Längden på sidan
-        farg (str): Färg på linjen
-    """
+    t.pencolor(farg)
+    for i in range(3):
+        t.forward(sida)
+        t.left(120)
+
     # TODO: Implementera funktionen
     # 1. Sätt pennans färg med t.pencolor(farg)
     # 2. Upprepa 3 gånger:
