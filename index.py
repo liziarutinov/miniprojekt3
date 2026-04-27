@@ -43,14 +43,9 @@ def rita_triangel(t, sida, farg):
 
 
 def rita_cirkel(t, radie, farg):
-    """
-    Ritar en cirkel.
+    t.pencolor(farg)
+    t.circle(radie)
     
-    Parametrar:
-        t: Turtle-objektet
-        radie (int): Cirkelns radie
-        farg (str): Färg på linjen
-    """
     # TODO: Implementera funktionen
     # 1. Sätt pennans färg med t.pencolor(farg)
     # 2. Använd t.circle(radie) för att rita cirkeln
