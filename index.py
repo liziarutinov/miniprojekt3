@@ -97,20 +97,37 @@ def huvudprogram():
         val = input("Valj: ")
         
         if val == "1":
+            sida = int(input("Sida: "))
+            farg = input("Farg: ")
+            rita_kvadrat(t, sida, farg)
+
             # TODO: Fråga efter sida och färg
             # sida = int(input("Sida: "))
             # farg = input("Farg: ")
             # Anropa rita_kvadrat(t, sida, farg)
             pass
         elif val == "2":
+            sida = int(input("Sida: "))
+            farg = input("Farg: ")
+            rita_triangel(t, sida, farg)
+
             # TODO: Fråga efter sida och färg
             # Anropa rita_triangel(t, sida, farg)
             pass
         elif val == "3":
+            radie = int(input("Radie: "))
+            farg = input("Farg: ")
+            rita_cirkel(t, radie, farg)
+
             # TODO: Fråga efter radie och färg
             # Anropa rita_cirkel(t, radie, farg)
             pass
         elif val == "4":
+            kronblad = int(input("Antal kronblad: "))
+            sida = int(input("Sida: "))
+            farg = input("Farg: ")
+            rita_blomma(t, kronblad, sida, farg)
+
             # TODO: Fråga efter antal kronblad, sida och färg
             # kronblad = int(input("Antal kronblad: "))
             # sida = int(input("Sida: "))
@@ -118,6 +135,10 @@ def huvudprogram():
             # Anropa rita_blomma(t, kronblad, sida, farg)
             pass
         elif val == "5":
+            print("Programmet avslutas.")
+            turtle.done()
+            break
+
             # TODO: Avsluta
             # turtle.done()  # Håller fönstret öppet
             # break
